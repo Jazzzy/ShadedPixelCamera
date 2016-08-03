@@ -23,7 +23,6 @@ public class lowResShaderCalls : MonoBehaviour {
             Graphics.Blit(source, destination);
             return;
         }
-        Debug.Log(material);
 
         material.SetFloat("_bwBlend", intensity);
         Graphics.Blit(source, destination, material);

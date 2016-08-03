@@ -17,7 +17,7 @@ public class highResShaderCalls : MonoBehaviour {
     {
         Debug.Log("HighResShader: Source width and height: (" + source.width + ","+source.height+")");
         
-
+       
         if (intensity == 0)
         {
             Graphics.Blit(source, destination);
