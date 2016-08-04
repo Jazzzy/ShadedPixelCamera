@@ -8,6 +8,8 @@ public class highResShaderCalls : MonoBehaviour {
     
     private Material material;
 
+
+
     // Creates a private material used to the effect
     void Awake()
     {

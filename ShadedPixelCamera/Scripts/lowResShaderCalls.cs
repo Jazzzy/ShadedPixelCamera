@@ -6,6 +6,7 @@ public class lowResShaderCalls : MonoBehaviour {
     public float intensity;
     private Material material;
 
+
     // Creates a private material used to the effect
     void Awake()
     {

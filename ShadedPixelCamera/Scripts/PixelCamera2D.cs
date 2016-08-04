@@ -6,10 +6,10 @@ namespace RyanNielson.PixelCamera2D
     public class PixelCamera2D : MonoBehaviour
     {
         [SerializeField]
-        private int baseWidth = 400;
+        private int baseWidth = 640;
 
         [SerializeField]
-        private int baseHeight = 240;
+        private int baseHeight = 480;
 
         [SerializeField]
         private PixelCamera2DBehaviour behaviour;
