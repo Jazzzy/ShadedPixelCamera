@@ -68,7 +68,7 @@ namespace RyanNielson.PixelCamera2D
 
             int xScaleFactor = nearestWidth / baseWidth;
             int yScaleFactor = nearestHeight / baseHeight;
-
+            
             int scaleFactor = yScaleFactor < xScaleFactor ? yScaleFactor : xScaleFactor;
 
             float heightRatio = (baseHeight * (float)scaleFactor) / Screen.height;
@@ -82,8 +82,12 @@ namespace RyanNielson.PixelCamera2D
         private void ScaleBehaviour()
         {
             float targetAspectRatio = baseWidth / (float)baseHeight;
+
             float windowAspectRatio = Screen.width / (float)Screen.height;
-            float scaleHeight = windowAspectRatio / targetAspectRatio;
+
+            float scaleHeight = windowAspectRatio  / (targetAspectRatio);
+
+            scaleHeight = scaleHeight * (1.15505f / windowAspectRatio);
 
             if (scaleHeight < 1f)
             {
