@@ -6,8 +6,8 @@
 		prevFrameSampler("Previous Frame Map", 2D) = "white" {}
 		NTSCArtifactSampler("Artifact Texture", 2D) = "black" {}
 
-		width("width", Range(0,1000)) = 640
-		heigth("heigth", Range(0,1000)) = 480
+		width("width", Range(0,1000)) = 400
+		heigth("heigth", Range(0,1000)) = 300
 
 
 		Tuning_Sharp("Tuning_Sharp", Range(0,1)) = 0.5
@@ -66,9 +66,7 @@
 				1.0, -0.3162277, 0.1
 			};*/
 
-			//// Reciprocals of screen dimensions, precomputed for perf.
-			//const float2 RcpScrWidth = float2(1.0f / 640.0f, 0.0f);
-			//const float2 RcpScrHeight = float2(0.0f, 1.0f / 480.0f);
+			
 
 		
 			// Calculate luma for an RGB value.

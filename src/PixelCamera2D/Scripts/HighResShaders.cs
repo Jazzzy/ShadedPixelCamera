@@ -45,10 +45,10 @@ public class HighResShaders : MonoBehaviour {
     public float Tuning_Scanlines;
 
     
-    public float width;
-    
+    private float width;
 
-    public float heigth;
+
+    private float heigth;
 
 
     void Start()

@@ -7,8 +7,8 @@ public class LowResShaders : MonoBehaviour {
     [Range(0, 0.99f)]
     public float Ghosting_Intensity;
 
-    public int lowResWidth = 640;
-    public int lowResHeigth = 480;
+    public int lowResWidth = 400;
+    public int lowResHeigth = 300;
 
     //public float Tuning_Strength = 0;
 
@@ -44,7 +44,7 @@ public class LowResShaders : MonoBehaviour {
         
         CompositeShader = new Material(Shader.Find("Hidden/Composite"));
         
-        pastFrame = new RenderTexture(Screen.width, Screen.height, 24);
+        pastFrame = new RenderTexture(lowResWidth, lowResHeigth, 24);
 
        
     }
@@ -54,7 +54,6 @@ public class LowResShaders : MonoBehaviour {
 
         RenderTexture temp = RenderTexture.GetTemporary(lowResWidth, lowResHeigth);
         
-
 
         //Composite effect
         CompositeShader.SetTexture("curFrameSampler", src);
